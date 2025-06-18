@@ -95,7 +95,7 @@ window.onload = function() {
 
 function showLovePage() {
   document.body.innerHTML = '';
-  window.location.href = 'https://wa.me/2349036627043?text=I%20love%20you%20too!';
+  window.location.href = 'https://wa.me/2349036627043?text=I%20am%20ready%20to%20start';
 }
 
 function showContactPage() {
