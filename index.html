@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Just For You 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="landing" class="landing">
+    <div id="fireworks-container"></div>
+    <div id="flower-animation"></div>
+    <div id="typewriter-text" class="typewriter"></div>
+    <button id="open-btn">Open</button>
+  </div>
+  <div class="container" id="main-content" style="display:none;">
+    <h1 id="main-title" style="visibility:hidden;">Hey Ussa💕</h1>
+    <p id="main-desc" style="visibility:hidden;">Uhmmm this is funny for me but at the same time I want you to know i cherish your pics and videos very well its one special thing for me. So this is awkward because i said it last time but it felt like i wasnt serious with what i said but this time I am and I will be willing to ask this question (CLICK THE BUTTON DOWN BELOW).</p>
+
+    <div class="gallery">
+      <div class="media"><img src="images/1.jpg" alt="Her Photo 1"></div>
+      <div class="media"><img src="images/2.jpg" alt="Her Photo 2"></div>
+      <div class="media"><img src="images/3.jpg" alt="Her Photo 3"></div>
+      <div class="media"><video src="videos/1.mp4" controls muted autoplay loop></video></div>
+      <div class="media"><video src="videos/2.mp4" controls muted autoplay loop></video></div>
+    </div>
+
+    <button onclick="askHerOut()">💌 I have a question...</button>
+  </div>
+
+  <audio id="bg-music" src="music.mp3" autoplay loop></audio>
+  <div id="music-play-overlay" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);z-index:3000;align-items:center;justify-content:center;">
+    <button id="music-play-btn" style="font-size:1.3rem;padding:18px 38px;border-radius:30px;background:#ff69b4;color:#fff;border:none;box-shadow:0 2px 8px rgba(255,105,180,0.13);cursor:pointer;">Tap to Play Music 🎵</button>
+  </div>
+
+  <div id="envelope-modal" class="envelope-modal" style="display:none;">
+    <div class="envelope-popup">
+      <div class="envelope-outer">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body">
+          <div class="letter-content">
+            <div class="letter-message" style="font-family: 'Segoe UI', Arial, sans-serif; font-style: normal; text-align: center; color: #111; font-size: 1.3rem; margin-bottom: 18px;">Will you be my girlfriend?</div>
+            <div class="letter-from" style="position: absolute; left: 18px; bottom: 60px; font-family: 'Segoe UI', Arial, sans-serif; font-style: normal; color: #ff69b4; font-size: 0.7rem; text-align: left;">omonuwa your homeboy</div>
+            <div class="letter-buttons">
+              <button id="yes-btn">Yes 😊</button>
+              <button id="no-btn">No 💔</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
